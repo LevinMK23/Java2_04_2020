@@ -1,8 +1,19 @@
 package lesson1.homework;
 
-public class Treadmill {
-    // TODO: 4/15/2020
+public class Treadmill implements Obstacle {
+
+    private int length;
+
+    public Treadmill(int length) {
+        this.length = length;
+    }
+
     public void take(Runnable runnable) {
-        // TODO: 4/15/2020
+        runnable.run(length);
+    }
+
+    @Override
+    public void take(Jumpable runnable) {
+
     }
 }

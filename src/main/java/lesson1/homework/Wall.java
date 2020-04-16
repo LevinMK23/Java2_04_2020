@@ -1,8 +1,19 @@
 package lesson1.homework;
 
-public class Wall {
-    // TODO: 4/15/2020
+public class Wall implements Obstacle {
+
+    private int height;
+
+    public Wall(int height) {
+        this.height = height;
+    }
+
+    @Override
+    public void take(Runnable runnable) {
+
+    }
+
     public void take(Jumpable jumpable) {
-        // TODO: 4/15/2020
+        jumpable.jump(height);
     }
 }
