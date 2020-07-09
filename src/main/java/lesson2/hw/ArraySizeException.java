@@ -1,5 +1,8 @@
 package lesson2.hw;
 
-public class ArraySizeException extends Exception {
-    // TODO: 14.04.2020  
+public class ArraySizeException extends RuntimeException {
+    @Override
+    public String getMessage() {
+        return "Incorrect size";
+    }
 }
